@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <title>View tweet</title>
+</head>
+<body>
+    <h1>Tweet details</h1>
+    <div class="tweet">
+        <h2>Username: <%= tweet.username %> </h2>
+        <p>Tweet ID: <%= tweet.id %> </p>
+        <p>Tweet content: <%= tweet.tweet %> </p>
+    </div>
+    <a class ="link-btn" href="/tweets/<%= tweet.id %>/edit">Edit Tweet</a>
+    <form action="/tweets/<%= tweet.id %>?_method=DELETE" method="post">
+        <button class ="link-btn">Delete tweet</button>
+    </form>
+    <a class ="link-btn" href="/tweets ">Back to index</a>
+</body>
+</html>

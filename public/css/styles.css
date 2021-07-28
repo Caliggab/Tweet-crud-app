@@ -1,0 +1,25 @@
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet {
+    background-color: azure;
+    border: 1px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 5em;
+    padding: 1em 1em 1em 5em;
+}
+
+
+.link-btn{
+    color:rgb(0, 0, 0);
+    align-self: flex-end;
+    text-decoration: none;
+    background-color:rgb(137, 178, 255);
+    padding: 1em;
+    border: 2px rgb(131, 131, 131) solid;
+}
